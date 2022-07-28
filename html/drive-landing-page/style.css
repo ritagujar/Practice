@@ -33,38 +33,38 @@ body {
   letter-spacing: 0.075rem;
 }
 
-.nav-links {
+.nav-menus {
   display: flex;
   align-items: center;
 }
 
-.nav-links li {
+.nav-menus li {
   list-style-type: none;
   padding-right: 30px;
 }
 
-.nav-links a {
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: var(--gray);
   font-size: 1.2rem;
   letter-spacing: 0.075rem;
+  transition: all 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link:hover,
+.nav-link:active {
   color: var(--blue);
 }
 
 .login {
   padding-right: 2rem;
-  text-decoration: none;
+  /* text-decoration: none;
   color: var(--gray);
   font-size: 1.2rem;
   align-items: center;
-  letter-spacing: 0.075rem;
-}
-
-.login:hover {
-  color: var(--blue);
+  letter-spacing: 0.075rem; */
 }
 
 .sign-up {
@@ -79,6 +79,7 @@ body {
   border-radius: 5px;
   letter-spacing: 0.075rem;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .sign-up:hover {
   background: transparent;
