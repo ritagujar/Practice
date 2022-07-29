@@ -16,6 +16,8 @@ const navSide = () => {
         }s`;
       }
     });
+
+    burger.classList.toggle("toggle");
   });
 };
 
