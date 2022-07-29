@@ -57,6 +57,7 @@ body {
 .nav-link:hover,
 .nav-link:active {
   color: var(--white);
+  transition: all 0.5s;
 }
 
 .login {
@@ -132,6 +133,10 @@ body {
     padding: 3rem 0;
   }
 
+  .nav-menus li {
+    opacity: 0;
+  }
+
   .burger {
     display: block;
   }
@@ -139,4 +144,16 @@ body {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
