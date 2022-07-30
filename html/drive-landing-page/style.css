@@ -133,6 +133,7 @@ body {
 
   .nav-link {
     padding: 3rem 0;
+    font-size: 1.5rem !important;
   }
 
   .nav-menus li {
