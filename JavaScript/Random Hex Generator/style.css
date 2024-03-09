@@ -3,3 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.hex-code {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 10px;
+}
