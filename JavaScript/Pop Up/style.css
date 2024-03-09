@@ -82,4 +82,15 @@ form button:hover {
   padding: 2rem;
   border: 1px solid #777;
   text-align: center;
+  animation: slide ease 0.8s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
 }
