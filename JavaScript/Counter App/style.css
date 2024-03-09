@@ -3,3 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.counter {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.counter_btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 8px;
+}
