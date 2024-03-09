@@ -3,3 +3,44 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.heading {
+  letter-spacing: 0.75px;
+}
+
+.counter {
+  width: 35rem;
+  background-color: #b156fe;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.counter > * {
+  margin-bottom: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.count {
+  font-size: 3.4rem;
+}
+
+.input-text {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 3px;
+  letter-spacing: 0.75px;
+}
