@@ -19,7 +19,8 @@
 
 .counter {
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .counter_btns {
