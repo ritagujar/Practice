@@ -27,4 +27,5 @@
 
 .location {
   padding-top: 1rem;
+  white-space: pre-line;
 }
