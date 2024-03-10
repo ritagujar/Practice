@@ -3,3 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  width: 10%;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  border: none;
+  background-color: #b156fe;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.location {
+  padding-top: 1rem;
+}
