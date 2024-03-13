@@ -52,10 +52,12 @@ main {
   justify-content: center;
   letter-spacing: 0.75px;
   line-height: 2.25rem;
+  font-size: 1.2rem;
 }
 
 .text {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  font-weight: 600;
 }
 
 .location {
