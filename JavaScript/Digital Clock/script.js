@@ -68,8 +68,7 @@ const showTime = () => {
   seconds.innerHTML = sec;
 };
 
-// showTime();
-
+// SetInterval will call the function every 1000 milliseconda (1 sec), so it's keep updating and shows the updated time on app every 1sec.
 setInterval(showTime, 1000);
 
 showDate();
