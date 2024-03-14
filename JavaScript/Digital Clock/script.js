@@ -30,34 +30,23 @@ const showDate = () => {
   ];
 
   let date = new Date();
-  //   console.log(date);
   let day = days[date.getDay()];
-  //   console.log(day);
   let todaysDate = date.getDate();
-  //   console.log(todaysDate);
   let month = months[date.getMonth()];
-  //   console.log(month);
   let year = date.getFullYear();
-  //   console.log(year);
 
   todaysCompleteDate.innerHTML = `${day}, ${todaysDate} ${month} ${year}`;
 };
 
 const showTime = () => {
   let date = new Date();
-  console.log(date);
   let hr = date.getHours();
-  console.log(hr);
   let min = date.getMinutes();
-  console.log(min);
   let sec = date.getSeconds();
-  console.log(sec);
 
-  //   Changing clock from 24 hr format to 12 hr format
+  // Changing clock from 24 hr format to 12 hr format
   if (hr == 0) hr == 12;
   if (hr > 12) hr = hr - 12;
-
-  console.log(hr);
 
   hr = hr < 10 ? "0" + hr : hr;
   min = min < 10 ? "0" + min : min;
