@@ -8,10 +8,8 @@ const getPosts = async () => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts?_limit=${limit}$_page=${pageCount}`
   );
-  console.log(response);
 
   const data = await response.json();
-  console.log(data);
 
   data.map((curPost, index) => {
     const postsHtmlData = `
@@ -44,7 +42,6 @@ window.addEventListener("scroll", () => {
   const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
 
   if (scrollTop + clientHeight >= scrollHeight) {
-    console.log("Reached Bottom of the page");
     showData();
   }
 });
