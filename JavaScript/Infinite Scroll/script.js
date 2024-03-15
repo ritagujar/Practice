@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 
 let limit = 4;
 let pageCount = 1;
+let postCount = 1;
 
 const getPosts = async () => {
   const response = await fetch(
@@ -15,7 +16,7 @@ const getPosts = async () => {
   data.map((curPost, index) => {
     const postsHtmlData = `
         <div class="posts">
-            <p class="posts_no">${curPost.id}</p>
+            <p class="posts_no">${postCount++}</p>
             <h2 class="posts_title">
                 ${curPost.title}
             </h2>
@@ -30,3 +31,20 @@ const getPosts = async () => {
 };
 
 getPosts();
+
+const showData = () => {
+  setTimeout(() => {
+    pageCount++;
+    getPosts();
+  }, 300);
+};
+
+window.addEventListener("scroll", () => {
+  // const scrollHeight = document.documentElement.scrollHeight
+  const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
+
+  if (scrollTop + clientHeight >= scrollHeight) {
+    console.log("Reached Bottom of the page");
+    showData();
+  }
+});
