@@ -15,10 +15,14 @@ const App = () => {
     setCounter((counter) => counter - 1);
   };
 
+  const counterColor = counter < 0 ? "red" : counter > 0 ? "green" : "black";
+
   return (
     <div className="app">
       <h2 className="app-heading">Counter App</h2>
-      <span className="app-counter">{counter}</span>
+      <span className="app-counter" style={{ color: counterColor }}>
+        {counter}
+      </span>
       <div className="app-btn">
         <button className="btn increase" onClick={increseCounter}>
           Increase
