@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.app-heading {
+  font-size: 2.5rem;
+  letter-spacing: 0.75px;
+}
+
+.app-counter {
+  margin: 2rem 0 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.app-btn {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 5.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+}
