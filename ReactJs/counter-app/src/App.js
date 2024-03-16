@@ -1,17 +1,37 @@
+import { useState } from "react";
 import "./App.css";
 
-function App() {
+const App = () => {
+  const [counter, setCounter] = useState(0);
+
+  const increseCounter = () => {
+    setCounter((counter) => counter + 1);
+  };
+
+  const resetCounter = () => {
+    setCounter(0);
+  };
+  const decreaseCounter = () => {
+    setCounter((counter) => counter - 1);
+  };
+
   return (
     <div className="app">
       <h2 className="app-heading">Counter App</h2>
-      <span className="app-counter">0</span>
+      <span className="app-counter">{counter}</span>
       <div className="app-btn">
-        <button className="btn increase">Increase</button>
-        <button className="btn reset">Reset</button>
-        <button className="btn descrese">Decrese</button>
+        <button className="btn increase" onClick={increseCounter}>
+          Increase
+        </button>
+        <button className="btn reset" onClick={resetCounter}>
+          Reset
+        </button>
+        <button className="btn descrese" onClick={decreaseCounter}>
+          Decrese
+        </button>
       </div>
     </div>
   );
-}
+};
 
 export default App;
