@@ -11,6 +11,7 @@ const getAllFoodItems = async () => {
   console.log(data.meals);
 
   topTenMeals.map((meal, index) => {
+    const limitedInstruction = limitWords(meal.strInstructions, 20);
     const postsHtmlData = `
     <div class="container__meals--meal">
         <div class="img__container">
@@ -19,7 +20,7 @@ const getAllFoodItems = async () => {
          <div class="container__meals--content">
             <h3 class="container__meal--title">${meal.strMeal}</h3>
             <p class="container__meal--desc">
-               ${meal.strInstructions}
+               ${limitedInstruction}
             </p>
         </div>
     </div>
@@ -28,5 +29,16 @@ const getAllFoodItems = async () => {
     mealContainer.insertAdjacentHTML("afterbegin", postsHtmlData);
   });
 };
+
+function limitWords(text, limit) {
+  const words = text.split(" ");
+  console.log("sfdgfdg", words);
+
+  if (words.length > limit) {
+    return words.slice(0, limit).join(" ") + "...";
+  }
+
+  return text;
+}
 
 getAllFoodItems();
