@@ -3,3 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  /* padding: 4rem; */
+  padding: 0 4rem 4rem 4rem;
+}
+
+.container__header {
+  width: 100%;
+  height: 6rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__header--heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container__header--heading--img {
+  width: 45px;
+  height: 45px;
+}
+
+.container__header--heading--title {
+  font-size: 1.9rem;
+}
+
+.container__header--heading--title > span {
+  color: orangered;
+}
+
+.container__header--list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.container__header--list--menu {
+  display: inline-block;
+  position: relative;
+}
+
+.container__header--list--menu > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #676866;
+  letter-spacing: 0.7px;
+}
+
+.container__header--list--menu a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0; /* Initially, the underline width is 0 */
+  height: 3px; /* Adjust thickness of underline */
+  background-color: orangered; /* Adjust color of underline */
+  transition: width 0.3s ease-in-out; /* Transition only the width */
+}
+
+.container__header--list--menu a:hover::before {
+  width: 100%; /* When hovering, the underline width expands to 100% */
+}
