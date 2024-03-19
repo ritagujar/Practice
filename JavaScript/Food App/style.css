@@ -6,11 +6,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f3f3;
 }
 
 .container {
   /* padding: 4rem; */
-  padding: 0 4rem 4rem 4rem;
+  padding: 0 4rem 2rem 4rem;
 }
 
 .container__header {
@@ -73,4 +74,42 @@ body {
 
 .container__header--list--menu a:hover::before {
   width: 100%; /* When hovering, the underline width expands to 100% */
+}
+
+.container__meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  padding: 2rem 4rem 4rem 2rem;
+}
+
+.container__meals--meal {
+  width: 340px;
+  place-self: center;
+  background-color: #ffffff;
+}
+
+.img__container {
+  border-radius: 10px;
+}
+
+.container__meal--img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.container__meals--content {
+  padding: 1rem;
+}
+
+.container__meal--title {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+
+.container__meal--desc {
+  color: #676866;
+  letter-spacing: 0.75px;
 }
