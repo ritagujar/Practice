@@ -6,9 +6,11 @@ const getAllFoodItems = async () => {
   );
   const data = await response.json();
 
+  const topTenMeals = data.meals.slice(0, 10);
+
   console.log(data.meals);
 
-  data.meals.map((meal, index) => {
+  topTenMeals.map((meal, index) => {
     const postsHtmlData = `
     <div class="container__meals--meal">
         <div class="img__container">
