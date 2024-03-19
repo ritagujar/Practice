@@ -113,3 +113,30 @@ body {
   color: #676866;
   letter-spacing: 0.75px;
 }
+
+@media screen and (max-width: 640px) {
+  .container {
+    /* padding: 4rem; */
+    padding: 0 1rem 1rem 2rem;
+  }
+
+  .container__header--heading--img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container__header--heading--title {
+    font-size: 1.7rem;
+  }
+
+  .container__header--list {
+    gap: 1rem;
+  }
+
+  .container__header--list--menu > a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #676866;
+    letter-spacing: 0.7px;
+  }
+}

@@ -8,8 +8,6 @@ const getAllFoodItems = async () => {
 
   const topTenMeals = data.meals.slice(0, 10);
 
-  console.log(data.meals);
-
   topTenMeals.map((meal, index) => {
     const limitedInstruction = limitWords(meal.strInstructions, 20);
     const postsHtmlData = `
@@ -32,7 +30,6 @@ const getAllFoodItems = async () => {
 
 function limitWords(text, limit) {
   const words = text.split(" ");
-  console.log("sfdgfdg", words);
 
   if (words.length > limit) {
     return words.slice(0, limit).join(" ") + "...";
