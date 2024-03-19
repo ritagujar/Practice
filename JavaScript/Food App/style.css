@@ -68,6 +68,7 @@ body {
   height: 3px; /* Adjust thickness of underline */
   background-color: orangered; /* Adjust color of underline */
   transition: width 0.3s ease-in-out; /* Transition only the width */
+  border-radius: 5px;
 }
 
 .container__header--list--menu a:hover::before {
