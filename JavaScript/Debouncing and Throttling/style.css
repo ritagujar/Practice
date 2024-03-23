@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  /* margin-top: 3rem; */
+}
+
+.increament_btn {
+  margin-top: 10px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* .increament_pressed {
+  font-size: 2rem;
+} */
