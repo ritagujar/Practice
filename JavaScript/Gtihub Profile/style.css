@@ -53,6 +53,7 @@ body {
   background-color: purple;
   padding: 0 50px;
   border-radius: 20px;
+  visibility: hidden;
 }
 .users_profile {
   margin-top: 50px;

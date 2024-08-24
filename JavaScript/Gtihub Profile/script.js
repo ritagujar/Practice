@@ -38,6 +38,7 @@ inputBox.addEventListener("submit", (e) => {
 
   getUser(user);
   getRepositories(user);
+  document.querySelector(".profile_info").style.visibility = "visible";
 });
 
 async function getRepositories(user) {
