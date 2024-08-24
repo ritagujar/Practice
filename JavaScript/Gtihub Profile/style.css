@@ -5,5 +5,52 @@
 }
 
 body {
-  background-color: aquamarine;
+  background-color: cornflowerblue;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+}
+
+.container {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.input_txt {
+  width: 45%;
+  height: 17%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  text-align: start;
+  font-family: inherit;
+  letter-spacing: 0.75px;
+  background-color: purple;
+}
+
+.input_txt:focus {
+  outline: none;
+}
+
+.profile_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: purple;
+  padding: 0 50px;
+  border-radius: 20px;
 }
