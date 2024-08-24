@@ -54,3 +54,45 @@ body {
   padding: 0 50px;
   border-radius: 20px;
 }
+.users_profile {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  /* background-position: cover; */
+  object-fit: cover;
+  border-radius: 200px;
+  border: 5px solid cornflowerblue;
+}
+
+.users_info {
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.user_name {
+  font-size: 1.4rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users_repos a {
+  background: cornflowerblue;
+  padding: 2px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.8rem;
+  padding: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+}
