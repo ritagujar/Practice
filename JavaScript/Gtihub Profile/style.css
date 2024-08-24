@@ -86,7 +86,7 @@ img {
   justify-content: space-between;
 }
 
-.users_repos a {
+.pinned_projects a {
   background: cornflowerblue;
   padding: 2px;
   display: inline-block;
