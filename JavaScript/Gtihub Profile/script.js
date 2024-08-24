@@ -14,7 +14,6 @@ async function getUser(user) {
   try {
     let response = await fetch(baseURL + user);
     let data = await response.json();
-    // console.log(data);
 
     userName.textContent = data.name;
     profileImg.src = data.avatar_url;
@@ -34,8 +33,6 @@ inputBox.addEventListener("submit", (e) => {
   e.preventDefault();
   let user = inputTxt.value;
 
-  console.log(user);
-
   getUser(user);
   getRepositories(user);
   document.querySelector(".profile_info").style.visibility = "visible";
@@ -45,8 +42,6 @@ async function getRepositories(user) {
   try {
     let response = await fetch(baseURL + user + "/repos?sort=created");
     let data = await response.json();
-
-    console.log(data);
 
     let repoList = "";
 
